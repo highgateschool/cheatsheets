@@ -168,4 +168,31 @@ if something == 20:
 
 ## Arrays/lists
 
-...tbc...
+In Python we use lists most of the time.
+- Lists' size does not need to be declared but can be intialized as empty.
+- Lists are specifically 1d, if you want more then use `import numpy`.
+	
+```python
+# Empty list
+my_list = []
+
+# Adding to end
+my_list.append( 'a thing' )
+
+# Defining list with entries
+another_list = [ 'Apple' , 'Orange' ]
+
+# Combining lists
+my_list = my_list + another_list
+
+# First item in list
+print( my_list[ 0 ] )
+
+# Last item in list
+print( my_list[ -1 ] )
+
+# Delete item from list
+del my_list[ 0 ]
+``` 
+
+In Pseudocode we tend to talk about arrays rather than lists
