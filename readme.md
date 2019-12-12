@@ -169,8 +169,8 @@ if something == 20:
 ## Arrays/lists
 
 In Python we use lists most of the time.
-- Lists' size does not need to be declared but can be intialized as empty.
-- Lists are specifically 1d, if you want more then use `import numpy`.
+- A list's size does not need to be declared but can be intialized as empty.
+- Lists are specifically 1d, if you want more then either a list of lists or use something like `import numpy`.
 	
 ```python
 # Empty list
@@ -196,3 +196,17 @@ del my_list[ 0 ]
 ``` 
 
 In Pseudocode we tend to talk about arrays rather than lists
+
+```pseudocode
+// DECLARE ARRAYS
+DECLARE days : ARRAY [1:20] OF STRING
+DECLARE bus_names: ARRAY [1:6] OF STRING
+
+// DECLARE AN ARRAY OF ARRAYS
+DECLARE bus_times: ARRAY[1:6] OF ARRAYS [1:20] OF INTEGER
+
+days <- [“Mon1”, “Tues1”, … ]
+bus_names <- [“Bus A”, “Bus B”, …]
+
+bus_times[i][j] = late_val
+```
